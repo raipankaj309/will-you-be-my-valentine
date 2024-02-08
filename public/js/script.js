@@ -12,7 +12,7 @@ const answers = [
     "Why are you doing this to me?",
     "Please give me a chance!",
     "I am begging you to stop!",
-    "Ok, Lets just start over.."
+    "Ok, I Will Keep Trying.."
 ]
 
 const no_button = document.getElementById('no-button');
@@ -25,7 +25,7 @@ no_button.addEventListener('click', () => {
     // Change banner source
     let banner = document.getElementById('banner');
     if (clicks === 0) {
-        banner.src = "images/no.gif";
+        banner.src = "pubil/images/no.gif";
         refreshBanner();
     }
     clicks++;
@@ -53,7 +53,7 @@ no_button.addEventListener('click', () => {
 yes_button.addEventListener('click', () => {
     // change banner gif path
     let banner = document.getElementById('banner');
-    banner.src = "images/yes.gif";
+    banner.src = "public/images/yes.gif";
     refreshBanner();
     // hide buttons div
     let buttons = document.getElementsByClassName('buttons')[0];
